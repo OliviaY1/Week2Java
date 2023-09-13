@@ -13,8 +13,11 @@ class Person {
      * @param name   the person's name (family name last)
      * @param utorid the person's UTORid
      */
-    Person
-    (String[] name, String utorid){this.name=name;this.utorid=utorid;}
+    Person(String[] name, String utorid){
+        this.name=name;
+        this.utorid=utorid;
+    }
+
 
     /**
      * Return a string representation of this person with this format:
@@ -22,6 +25,7 @@ class Person {
      * @return a string representation of this person
      */
     public String toString(){
+
         return this.formatName()+": "+this.utorid;
     }
 
